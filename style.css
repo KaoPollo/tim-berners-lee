@@ -57,15 +57,18 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .chemin {
-    margin:10px;
+    height: 20px;
+    margin: 15px 10px 0px 15px;
     font-size: 12px;
     text-decoration: none;
 }
 
 .all {
+    max-width: 65%;
     border-style:solid;
     border-width: 1px;
     border-color: #ddd;
@@ -102,9 +105,7 @@ h3 {
     font-size: 12px;
 }
 
-.infos {
-    
-}
+
 
 
 .imgInfo {
@@ -113,13 +114,11 @@ h3 {
     border-style:solid ;
     border-width: 1px;
     border-color: #ddd;
+    order: 2;
 }
 
-.imgInfo {
-    border-style:solid ;
-    border-width: 1px;
-    border-color: #ddd;
-}
+
+    
 
 .image {
     border-style:solid;
@@ -160,6 +159,14 @@ h3 {
 
 .textinfo {
     font-size: 14px;
+}
+
+
+
+
+.block {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 
@@ -225,9 +232,6 @@ h3 {
       display: none;
     }
     
-    .imgInfo {
-       
-    }
 
     .image {
         width: 60%;
@@ -247,6 +251,26 @@ h3 {
   /* Mobil version */
 
   @media (max-width:600px) {
+    .container {
+        display: flex;
+    }
+
+    .all {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .block {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 80%;
+    }
+
+    .textarticle {
+        order: 2;
+    }
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
