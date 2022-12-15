@@ -310,6 +310,10 @@ h3 {
       margin-right: auto;
     }
 
+    .container {
+      width: 100%;
+    }
+
   }
 
 
